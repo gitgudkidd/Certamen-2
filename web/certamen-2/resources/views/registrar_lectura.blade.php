@@ -2,7 +2,6 @@
 @extends('layouts.master_home')
 
 @section('cunt')
-    <!-- Agregar formulario -->
     <div class="row">
         <div class="col-lg-5 col-md-6 col-sm-12 mx-auto mt-5">
             <div class="card">
@@ -31,6 +30,14 @@
                     <div class="mb-3">
                         <label for="valor-txt" class="form-label">Valor</label>
                         <input type="number"  id="valor-txt" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tipo de medida</option>
+                            <option value="kW">Kilowatts</option>
+                            <option value="W">Watts</option>
+                            <option value="C">Temperatura</option>
+                          </select>
                     </div>
                 </div>
                 <div class="card-footer d-grid gap-1">
